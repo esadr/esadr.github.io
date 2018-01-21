@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Ehsan Sadrfaridpour</title>
+    <link>https://esadr.github.io/project/</link>
+    <description>Recent content in Projects on Ehsan Sadrfaridpour</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Ehsan Sadrfaridpour</copyright>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/project/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Multi Level Support Vector Machines</title>
+      <link>https://esadr.github.io/project/mlsvm/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://esadr.github.io/project/mlsvm/</guid>
+      <description>&lt;p&gt;write about mlsvm&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
