@@ -1,50 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ehsan Sadrfaridpour on Ehsan Sadrfaridpour</title>
-    <link>https://esadr.github.io/</link>
-    <description>Recent content in Ehsan Sadrfaridpour on Ehsan Sadrfaridpour</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Academic</title>
+    <link>/</link>
+    <description>Recent content on Academic</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2017 Ehsan Sadrfaridpour</copyright>
-    <lastBuildDate>Wed, 20 Sep 2017 15:18:00 +0000</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; {year} Ehsan Sadrfaridpour</copyright>
+    <lastBuildDate>Thu, 09 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
-      <title>Predictive Models for Bariatric Surgery Risks with Imbalanced Medical Datasets</title>
-      <link>https://esadr.github.io/publication/bariatric/</link>
-      <pubDate>Tue, 01 Aug 2017 19:36:46 -0500</pubDate>
+      <title>Engineering fast multilevel support vector machines</title>
+      <link>/publication/mlsvm_journal/</link>
+      <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://esadr.github.io/publication/bariatric/</guid>
+      <guid>/publication/mlsvm_journal/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Engineering multilevel support vector machines</title>
-      <link>https://esadr.github.io/publication/mlsvm_journal/</link>
-      <pubDate>Tue, 25 Jul 2017 00:00:00 +0000</pubDate>
+      <title>Predictive models for bariatric surgery risks with imbalanced medical datasets</title>
+      <link>/publication/bariatric/</link>
+      <pubDate>Fri, 01 Feb 2019 19:36:46 -0500</pubDate>
       
-      <guid>https://esadr.github.io/publication/mlsvm_journal/</guid>
+      <guid>/publication/bariatric/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Algebraic multigrid support vector machines</title>
-      <link>https://esadr.github.io/publication/mlsvm_essan2016/</link>
+      <link>/publication/mlsvm_essan2016/</link>
       <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://esadr.github.io/publication/mlsvm_essan2016/</guid>
+      <guid>/publication/mlsvm_essan2016/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Multi Level Support Vector Machines</title>
-      <link>https://esadr.github.io/project/mlsvm/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://esadr.github.io/project/mlsvm/</guid>
-      <description>&lt;p&gt;write about mlsvm&lt;/p&gt;
-</description>
     </item>
     
   </channel>
