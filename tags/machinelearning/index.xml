@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MachineLearning on Ehsan SadrFaridpour</title>
-    <link>https://esadr.github.io/tags/machinelearning/</link>
-    <description>Recent content in MachineLearning on Ehsan SadrFaridpour</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; {year} Ehsan Sadrfaridpour</copyright>
-    <lastBuildDate>Thu, 06 Jun 2019 10:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://esadr.github.io/tags/machinelearning/index.xml" rel="self" type="application/rss+xml" />
-    
+    <title>MachineLearning | Ehsan SadrFaridpour - Machine Learning and AI Research</title>
+    <link>https://ehsan.faridpour.com/tags/machinelearning/</link>
+      <atom:link href="https://ehsan.faridpour.com/tags/machinelearning/index.xml" rel="self" type="application/rss+xml" />
+    <description>MachineLearning</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 06 Jun 2019 10:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ehsan.faridpour.com/media/icon_hu7729264130191091259.png</url>
+      <title>MachineLearning</title>
+      <link>https://ehsan.faridpour.com/tags/machinelearning/</link>
+    </image>
     
     <item>
       <title>MLSVM Talk</title>
-      <link>https://esadr.github.io/talk/petsc_user_meeting_2019/</link>
+      <link>https://ehsan.faridpour.com/event/petsc/</link>
       <pubDate>Thu, 06 Jun 2019 10:00:00 +0000</pubDate>
-      
-      <guid>https://esadr.github.io/talk/petsc_user_meeting_2019/</guid>
-      <description>Preseting algebraic multilevel support vector machines for big data</description>
+      <guid>https://ehsan.faridpour.com/event/petsc/</guid>
+      <description></description>
     </item>
     
   </channel>

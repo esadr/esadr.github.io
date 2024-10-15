@@ -1,97 +1,69 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Ehsan SadrFaridpour</title>
-    <link>https://esadr.github.io/authors/</link>
+    <link>http://localhost:1313/authors/</link>
     <description>Recent content in Authors on Ehsan SadrFaridpour</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; {year} Ehsan Sadrfaridpour</copyright>
     <lastBuildDate>Thu, 09 May 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://esadr.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ehsan Sadrfaridpour</title>
-      <link>https://esadr.github.io/authors/ehsan-sadrfaridpour/</link>
+      <link>http://localhost:1313/authors/ehsan-sadrfaridpour/</link>
       <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://esadr.github.io/authors/ehsan-sadrfaridpour/</guid>
+      <guid>http://localhost:1313/authors/ehsan-sadrfaridpour/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Ilya Safro</title>
-      <link>https://esadr.github.io/authors/ilya-safro/</link>
+      <link>http://localhost:1313/authors/ilya-safro/</link>
       <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://esadr.github.io/authors/ilya-safro/</guid>
+      <guid>http://localhost:1313/authors/ilya-safro/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Talayeh Razzaghi</title>
-      <link>https://esadr.github.io/authors/talayeh-razzaghi/</link>
+      <link>http://localhost:1313/authors/talayeh-razzaghi/</link>
       <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://esadr.github.io/authors/talayeh-razzaghi/</guid>
+      <guid>http://localhost:1313/authors/talayeh-razzaghi/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>John D. Scott</title>
-      <link>https://esadr.github.io/authors/john-d.-scott/</link>
+      <link>http://localhost:1313/authors/john-d.-scott/</link>
       <pubDate>Fri, 01 Feb 2019 19:36:46 -0500</pubDate>
-      
-      <guid>https://esadr.github.io/authors/john-d.-scott/</guid>
+      <guid>http://localhost:1313/authors/john-d.-scott/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Joseph Ewing</title>
-      <link>https://esadr.github.io/authors/joseph-ewing/</link>
+      <link>http://localhost:1313/authors/joseph-ewing/</link>
       <pubDate>Fri, 01 Feb 2019 19:36:46 -0500</pubDate>
-      
-      <guid>https://esadr.github.io/authors/joseph-ewing/</guid>
+      <guid>http://localhost:1313/authors/joseph-ewing/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Andre Luckow</title>
-      <link>https://esadr.github.io/authors/andre-luckow/</link>
+      <link>http://localhost:1313/authors/andre-luckow/</link>
       <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://esadr.github.io/authors/andre-luckow/</guid>
+      <guid>http://localhost:1313/authors/andre-luckow/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Ken Kennedy</title>
-      <link>https://esadr.github.io/authors/ken-kennedy/</link>
+      <link>http://localhost:1313/authors/ken-kennedy/</link>
       <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://esadr.github.io/authors/ken-kennedy/</guid>
+      <guid>http://localhost:1313/authors/ken-kennedy/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Sandeep Jeereddy</title>
-      <link>https://esadr.github.io/authors/sandeep-jeereddy/</link>
+      <link>http://localhost:1313/authors/sandeep-jeereddy/</link>
       <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://esadr.github.io/authors/sandeep-jeereddy/</guid>
+      <guid>http://localhost:1313/authors/sandeep-jeereddy/</guid>
       <description></description>
     </item>
-    
-    <item>
-      <title></title>
-      <link>https://esadr.github.io/authors/admin/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://esadr.github.io/authors/admin/</guid>
-      <description>Hello, I am Ehsan Sadrfaridpour, a Ph.D. candidate at Clemson University studying Biomedical Data Science and Informatics. I have experience in developing scalable machine learning algorithms for application in text mining and health care. I work under the supervision of professor Ilya Safro in the Algorithms and Computational Science Lab.</description>
-    </item>
-    
   </channel>
 </rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Multilevel Framework | Ehsan SadrFaridpour - Machine Learning and AI Research</title>
+    <link>https://ehsan.faridpour.com/tags/multilevel-framework/</link>
+      <atom:link href="https://ehsan.faridpour.com/tags/multilevel-framework/index.xml" rel="self" type="application/rss+xml" />
+    <description>Multilevel Framework</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 09 May 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://ehsan.faridpour.com/media/icon_hu7729264130191091259.png</url>
+      <title>Multilevel Framework</title>
+      <link>https://ehsan.faridpour.com/tags/multilevel-framework/</link>
+    </image>
+    
+    <item>
+      <title>Engineering Fast Multilevel Support Vector Machines</title>
+      <link>https://ehsan.faridpour.com/publication/journal-article/mlsvm_journal/</link>
+      <pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://ehsan.faridpour.com/publication/journal-article/mlsvm_journal/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;The computational complexity of solving nonlinear support vector machine (SVM) is prohibitive on large-scale data. In particular, this issue becomes very sensitive when the data represents additional difficulties such as highly imbalanced class sizes. Typically, nonlinear kernels produce significantly higher classification quality compared to linear kernels but introduce extra kernel and model parameters, which makes fitting computationally expensive. We introduce a generalized fast multilevel framework for regular and weighted SVM and discuss several versions of its algorithmic components that lead to a good trade-off between quality and time. Our framework is implemented using PETSc, which allows an easy integration with scientific computing tasks. The experimental results demonstrate significant speedup compared to the state-of-the-art nonlinear SVM libraries.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Algebraic Multigrid Support Vector Machines</title>
+      <link>https://ehsan.faridpour.com/publication/conference-paper/</link>
+      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
+      <guid>https://ehsan.faridpour.com/publication/conference-paper/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;The support vector machine is a flexible optimization-based technique widely used for classification problems. In practice, its training part becomes computationally expensive on large-scale data sets because of such reasons as the complexity and number of iterations in parameter fitting methods, underlying optimization solvers, and nonlinearity of kernels. We introduce a fast multilevel framework for solving support vector machine models that is inspired by the algebraic multigrid. Significant improvement in the running time has been achieved without any loss in the quality. The proposed technique is highly beneficial on imbalanced sets. We demonstrate computational results on publicly available and industrial data sets.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
