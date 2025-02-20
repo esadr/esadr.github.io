@@ -2,212 +2,137 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ehsan.faridpour.com/projects/</loc>
+    <loc>http://localhost:1313/post/api-server/api_server_deep_dive/</loc>
+    <lastmod>2025-02-16T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/post/api-server/intro_to_api_s01_e01/</loc>
+    <lastmod>2025-02-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/post/automation/api_server_high_level/</loc>
+    <lastmod>2025-02-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2025-02-14T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2024-05-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/post/get-started/</loc>
-    <lastmod>2023-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ehsan.faridpour.com/tags/academic/</loc>
-    <lastmod>2023-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ehsan.faridpour.com/post/</loc>
-    <lastmod>2023-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ehsan.faridpour.com/tags/hugo-blox/</loc>
-    <lastmod>2023-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ehsan.faridpour.com/tags/markdown/</loc>
-    <lastmod>2023-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ehsan.faridpour.com/tags/</loc>
-    <lastmod>2023-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ehsan.faridpour.com/tags/hugo/</loc>
+    <loc>http://localhost:1313/post/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/project/pandas/</loc>
+    <loc>http://localhost:1313/tags/markdown/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/project/</loc>
+    <loc>http://localhost:1313/tags/second-brain/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/project/pytorch/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/project/scikit/</loc>
-    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ehsan.faridpour.com/tags/second-brain/</loc>
-    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ehsan.faridpour.com/tags/wowchemy/</loc>
-    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ehsan.faridpour.com/post/second-brain/</loc>
-    <lastmod>2023-10-26T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ehsan.faridpour.com/post/data-visualization/</loc>
-    <lastmod>2023-10-25T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ehsan.faridpour.com/post/teach-courses/</loc>
+    <loc>http://localhost:1313/experience/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/experience/</loc>
-    <lastmod>2023-10-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ehsan.faridpour.com/tags/hugo-blox-builder/</loc>
-    <lastmod>2023-10-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ehsan.faridpour.com/tags/javascript/</loc>
-    <lastmod>2023-10-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ehsan.faridpour.com/teaching/js/</loc>
-    <lastmod>2023-10-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ehsan.faridpour.com/teaching/python/</loc>
-    <lastmod>2023-10-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ehsan.faridpour.com/tags/python/</loc>
-    <lastmod>2023-10-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ehsan.faridpour.com/teaching/</loc>
-    <lastmod>2023-10-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ehsan.faridpour.com/post/project-management/</loc>
-    <lastmod>2023-10-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://ehsan.faridpour.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2023-10-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/tags/machinelearning/</loc>
+    <loc>http://localhost:1313/tags/machinelearning/</loc>
     <lastmod>2019-06-06T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/event/petsc/</loc>
+    <loc>http://localhost:1313/event/petsc/</loc>
     <lastmod>2019-06-06T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/event/</loc>
+    <loc>http://localhost:1313/event/</loc>
     <lastmod>2019-06-06T10:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/publication_types/article-journal/</loc>
+    <loc>http://localhost:1313/publication_types/article-journal/</loc>
     <lastmod>2019-05-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/publication/journal-article/mlsvm_journal/</loc>
+    <loc>http://localhost:1313/publication/journal-article/mlsvm_journal/</loc>
     <lastmod>2019-05-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/tags/machine-learning/</loc>
+    <loc>http://localhost:1313/tags/machine-learning/</loc>
     <lastmod>2019-05-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/tags/multilevel-framework/</loc>
+    <loc>http://localhost:1313/tags/multilevel-framework/</loc>
     <lastmod>2019-05-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/tags/optimization/</loc>
+    <loc>http://localhost:1313/tags/optimization/</loc>
     <lastmod>2019-05-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/publication_types/</loc>
+    <loc>http://localhost:1313/publication_types/</loc>
     <lastmod>2019-05-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/publication/</loc>
+    <loc>http://localhost:1313/publication/</loc>
     <lastmod>2019-05-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/tags/support-vector-machines/</loc>
+    <loc>http://localhost:1313/tags/support-vector-machines/</loc>
     <lastmod>2019-05-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/tags/bariatric-surgery/</loc>
+    <loc>http://localhost:1313/tags/bariatric-surgery/</loc>
     <lastmod>2019-02-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/tags/imbalanced-classification/</loc>
+    <loc>http://localhost:1313/tags/imbalanced-classification/</loc>
     <lastmod>2019-02-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/publication/journal-article/bariatric_surgery/</loc>
+    <loc>http://localhost:1313/publication/journal-article/bariatric_surgery/</loc>
     <lastmod>2019-02-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/publication/conference-paper/</loc>
+    <loc>http://localhost:1313/publication/conference-paper/</loc>
     <lastmod>2017-04-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://ehsan.faridpour.com/publication_types/paper-conference/</loc>
+    <loc>http://localhost:1313/publication_types/paper-conference/</loc>
     <lastmod>2017-04-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
