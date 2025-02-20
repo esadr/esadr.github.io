@@ -41,10 +41,13 @@
   
     
   
-  <meta name="description" content="Ehsan SadrFaridpour - Biomedical Data Science Researcher with expertise in scalable machine learning, AI, and predictive analytics." />
+  <meta name="description" content="Designing a Well-Structured API: Concepts &amp; Best Practices
+
+Why I’m Interested in This
+I love automation. There’s something deeply satisfying about writing code that handles small, everyday tasks—whether it’s controlling my smart home, transcribing voice notes into text, or running quick Python scripts to fetch information. However, I don’t always want to be tied to my desk, opening terminals and running commands just to turn on a light or set a reminder. Ideally, I’d like to control these automations right from my couch—maybe via my phone, a voice assistant, or a simple web app. I also want to make these conveniences accessible to my family, who shouldn’t need to know how to code or use SSH." />
 
   
-  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/publication_types/paper-conference/" />
+  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/post/api-server/intro_to_api_s01_e02/" />
 
   
   
@@ -156,14 +159,12 @@
 
   
   
-    <link rel="alternate" href="/publication_types/paper-conference/index.xml" type="application/rss+xml" title="Ehsan SadrFaridpour - Machine Learning and AI Research" />
-  
 
   
   <link rel="icon" type="image/png" href="/media/icon_hu_cb46917a004be69d.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu_420a271a0a9e31be.png" />
 
-  <link rel="canonical" href="http://localhost:1313/publication_types/paper-conference/" />
+  <link rel="canonical" href="http://localhost:1313/post/api-server/intro_to_api_s01_e02/" />
 
   
   
@@ -189,22 +190,31 @@
     <meta property="twitter:creator" content="@SadrEhson" />
   
   <meta property="og:site_name" content="Ehsan SadrFaridpour - Machine Learning and AI Research" />
-  <meta property="og:url" content="http://localhost:1313/publication_types/paper-conference/" />
-  <meta property="og:title" content="Paper-Conference | Ehsan SadrFaridpour - Machine Learning and AI Research" />
-  <meta property="og:description" content="Ehsan SadrFaridpour - Biomedical Data Science Researcher with expertise in scalable machine learning, AI, and predictive analytics." /><meta property="og:image" content="http://localhost:1313/media/icon_hu_c95efeb576b66663.png" />
+  <meta property="og:url" content="http://localhost:1313/post/api-server/intro_to_api_s01_e02/" />
+  <meta property="og:title" content="API Server Test | Ehsan SadrFaridpour - Machine Learning and AI Research" />
+  <meta property="og:description" content="Designing a Well-Structured API: Concepts &amp; Best Practices
+
+Why I’m Interested in This
+I love automation. There’s something deeply satisfying about writing code that handles small, everyday tasks—whether it’s controlling my smart home, transcribing voice notes into text, or running quick Python scripts to fetch information. However, I don’t always want to be tied to my desk, opening terminals and running commands just to turn on a light or set a reminder. Ideally, I’d like to control these automations right from my couch—maybe via my phone, a voice assistant, or a simple web app. I also want to make these conveniences accessible to my family, who shouldn’t need to know how to code or use SSH." /><meta property="og:image" content="http://localhost:1313/media/icon_hu_c95efeb576b66663.png" />
     <meta property="twitter:image" content="http://localhost:1313/media/icon_hu_c95efeb576b66663.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="og:updated_time" content="2017-04-21T00:00:00&#43;00:00" />
+      <meta
+        property="article:published_time"
+        content="2025-02-15T00:00:00&#43;00:00"
+      />
     
+    <meta property="article:modified_time" content="2025-02-15T00:00:00&#43;00:00">
   
 
   
 
 
 
+  
 
-  <title>Paper-Conference | Ehsan SadrFaridpour - Machine Learning and AI Research</title>
+
+  <title>API Server Test | Ehsan SadrFaridpour - Machine Learning and AI Research</title>
 
   
   
@@ -234,6 +244,10 @@
   
   
   
+  
+  
+  
+  
     
       
       
@@ -253,9 +267,6 @@
         
       
     
-  
-  
-  
   
     
       
@@ -858,57 +869,124 @@
     </div>
     <div class="page-body  my-10">
       
+<main>
+  <article>
+    <h1>API Server Test</h1>
+    <p><strong>February 15, 2025</strong></p>
+    <h1 id="designing-a-well-structured-api-concepts--best-practices"><strong>Designing a Well-Structured API: Concepts &amp; Best Practices</strong></h1>
+<hr>
+<h2 id="why-im-interested-in-this"><strong>Why I’m Interested in This</strong></h2>
+<p>I love automation. There’s something deeply satisfying about writing code that handles small, everyday tasks—whether it’s controlling my smart home, transcribing voice notes into text, or running quick Python scripts to fetch information. However, I don’t always want to be tied to my desk, opening terminals and running commands just to turn on a light or set a reminder. Ideally, I’d like to control these automations right from my couch—maybe via my phone, a voice assistant, or a simple web app. I also want to make these conveniences accessible to my family, who shouldn’t need to know how to code or use SSH.</p>
+<p>That’s where API servers shine. Instead of running scripts manually, I can build an API that allows me (and others) to trigger tasks from just about anywhere. Whether it’s turning on the lights, checking my home storage for a movie, or scheduling a reminder, having a central API greatly simplifies everything. It starts small—maybe just a local server at home—but can easily grow with VPN access or even move to the cloud. In this series, I’ll show you how I’m designing and building this type of API step by step, so you can see how straightforward and powerful it can be to integrate automation into your daily life.</p>
+<hr>
+<h2 id="-introduction-why-api-design-matters"><strong>🚀 Introduction: Why API Design Matters</strong></h2>
+<p>APIs are the <strong>backbone of modern applications</strong>, enabling communication between different systems, devices, and services. Whether it’s for a <strong>smart home</strong>, <strong>web application</strong>, or <strong>mobile app</strong>, a well-designed API ensures:</p>
+<ul>
+<li><strong>Consistency</strong> – Clear, predictable behavior for developers and users.</li>
+<li><strong>Scalability</strong> – Adapt and expand without breaking existing functionality.</li>
+<li><strong>Security</strong> – Protect against unauthorized access and malicious attacks.</li>
+<li><strong>Maintainability</strong> – Simplify debugging and long-term support.</li>
+</ul>
+<hr>
+<h2 id="-what-this-post-covers"><strong>🔹 What This Post Covers</strong></h2>
+<p>This post provides:</p>
+<ul>
+<li><strong>Key principles of API design</strong> – Focusing on REST best practices.</li>
+<li><strong>Using OpenAPI for your API definition</strong> – How to write and manage <code>openapi.yaml</code>.</li>
+<li><strong>Generating API endpoints</strong> – Turning a schema into working code.</li>
+</ul>
+<p>It’s <strong>part of a series</strong> where we’ll build an API <strong>step by step</strong>, from design to implementation.</p>
+<hr>
+<h2 id="-key-principles-of-api-design"><strong>🔹 Key Principles of API Design</strong></h2>
+<h3 id="1-clarity--consistency"><strong>1️⃣ Clarity &amp; Consistency</strong></h3>
+<p>A good API should be:</p>
+<ul>
+<li><strong>Intuitive</strong> – Easy to understand and use.</li>
+<li><strong>Predictable</strong> – Clear request/response patterns.</li>
+<li><strong>Standardized</strong> – Follows commonly accepted REST conventions.</li>
+</ul>
+<p><strong>Example of a Well-Designed RESTful API:</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th>Action</th>
+          <th>Endpoint</th>
+          <th>Method</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Get all devices</td>
+          <td><code>/devices</code></td>
+          <td><code>GET</code></td>
+          <td>Returns a list of available devices.</td>
+      </tr>
+      <tr>
+          <td>Get device status</td>
+          <td><code>/devices/{id}/status</code></td>
+          <td><code>GET</code></td>
+          <td>Retrieves the current status of a device.</td>
+      </tr>
+      <tr>
+          <td>Turn device on/off</td>
+          <td><code>/devices/{id}/control</code></td>
+          <td><code>POST</code></td>
+          <td>Sends a command to turn a device ON or OFF.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="2-why-rest"><strong>2️⃣ Why REST?</strong></h3>
+<p>For this project, I’m focusing on <strong>RESTful APIs</strong> because they:</p>
+<ul>
+<li>Are straightforward to document and share using OpenAPI.</li>
+<li>Provide a clear structure for typical device control tasks.</li>
+<li>Scale well from small, local projects to large, distributed systems.</li>
+</ul>
+<hr>
+<h3 id="3-using-openapi-to-define-the-api-structure"><strong>3️⃣ Using OpenAPI to Define the API Structure</strong></h3>
+<p>To ensure the API is <strong>well-documented</strong> and <strong>easy to generate</strong>, I’ll define it using <strong>OpenAPI 3.0</strong>.</p>
+<p><strong>Why OpenAPI?</strong></p>
+<ul>
+<li><strong>Automated documentation</strong> – Tools can generate a <code>/docs</code> endpoint to explore and test.</li>
+<li><strong>Consistency</strong> – Forces you to think through endpoints, parameters, and responses.</li>
+<li><strong>Code generation</strong> – Creates boilerplate for various languages, saving development time.</li>
+</ul>
+<hr>
+<h2 id="-next-steps"><strong>🔹 Next Steps</strong></h2>
+<ol>
+<li><strong>Define our API with OpenAPI (<code>openapi.yaml</code>).</strong></li>
+<li><strong>Generate the corresponding API endpoints.</strong></li>
+<li><strong>Implement and test each endpoint.</strong></li>
+</ol>
+<p>Have questions or feedback? Let me know in the comments! 🚀</p>
+<hr>
+<h3 id="-downloads--resources"><strong>📂 Downloads &amp; Resources</strong></h3>
+<p>Stay tuned for the next post, where I’ll share the <strong>OpenAPI Schema (<code>openapi.yaml</code>)</strong> and walk through how to use it to generate your API.</p>
 
-<div class="max-w-prose mx-auto flex justify-center">
-  <article class="prose prose-slate lg:prose-xl dark:prose-invert">
-    <h1 class="lg:text-6xl">Paper-Conference</h1>
-    
+  </section>
   </article>
-</div>
-
-
-
-
-<div class="flex flex-col items-center">
-
-  <div class="container max-w-[65ch] mx-auto bg-white dark:bg-zinc-900 rounded-xl border-gray-100 dark:border-gray-700 border shadow-md overflow-hidden my-5">
-
-
   
-  
-  
-
-
-
-
-
-
-
-
-<a href="/publication/conference-paper/"  class="mb-5">
-  <div class="md:flex">
-    <div class="md:flex-shrink-0 overflow-hidden">
-      
-    </div>
-    <div class="p-8">
-      <div class="uppercase tracking-wide text-md text-primary-700 dark:text-primary-200 font-semibold">Algebraic Multigrid Support Vector Machines</div>
-      <p class="block mt-1 text-sm leading-tight font-medium text-black dark:text-white">
-        Introducing a fast multilevel framework inspired by algebraic multigrid for support vector machines to improve computational efficiency without compromising quality.</p>
-      <p class="mt-2 text-gray-500 dark:text-gray-400 text-sm">Apr 21, 2017</p>
-    </div>
-  </div>
-</a>
-
-  
-
-  </div>
+  <script
+    src="https://giscus.app/client.js"
+    data-repo="esadr/esadr.github.io"
+    data-repo-id="MDEwOlJlcG9zaXRvcnkxMDQxMzM4NjU="
+    data-category="q-a"
+    data-category-id="DIC_kwDOBjT06c4CnIHT"  Replace with your actual category ID
+    data-mapping="pathname"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-theme="preferred_color_scheme"
+    data-input-position="bottom"
+    crossorigin="anonymous"
+    async>
+</script>
 
 
   
 
-
-</div>
-
+</main>
 
     </div>
     <div class="page-footer">

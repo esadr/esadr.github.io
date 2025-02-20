@@ -18,7 +18,6 @@
       <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/post/api-server/intro_to_api_s01_e01/</guid>
       <description>&lt;h1 id=&#34;designing-a-well-structured-api-concepts--best-practices&#34;&gt;&lt;strong&gt;Designing a Well-Structured API: Concepts &amp;amp; Best Practices&lt;/strong&gt;&lt;/h1&gt;
-&lt;p&gt;📌 &lt;em&gt;Tags: API Design, OpenAPI, Software Architecture&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;why-im-interested-in-this&#34;&gt;&lt;strong&gt;Why I’m Interested in This&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;I love automation. There’s something deeply satisfying about writing code that handles small, everyday tasks—whether it’s controlling my smart home, transcribing voice notes into text, or running quick Python scripts to fetch information. However, I don’t always want to be tied to my desk, opening terminals and running commands just to turn on a light or set a reminder. Ideally, I’d like to control these automations right from my couch—maybe via my phone, a voice assistant, or a simple web app. I also want to make these conveniences accessible to my family, who shouldn’t need to know how to code or use SSH.&lt;/p&gt;
