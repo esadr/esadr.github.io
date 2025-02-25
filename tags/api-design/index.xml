@@ -1,115 +1,91 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>API Design | Ehsan SadrFaridpour - Machine Learning and AI Research</title>
-    <link>http://localhost:1313/tags/api-design/</link>
-      <atom:link href="http://localhost:1313/tags/api-design/index.xml" rel="self" type="application/rss+xml" />
-    <description>API Design</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 14 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>http://localhost:1313/media/icon_hu_c95efeb576b66663.png</url>
-      <title>API Design</title>
-      <link>http://localhost:1313/tags/api-design/</link>
-    </image>
-    
-    <item>
-      <title>API Server High Level</title>
-      <link>http://localhost:1313/post/api-server/intro_to_api_s01_e01/</link>
-      <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/api-server/intro_to_api_s01_e01/</guid>
-      <description>&lt;h1 id=&#34;designing-a-well-structured-api-concepts--best-practices&#34;&gt;&lt;strong&gt;Designing a Well-Structured API: Concepts &amp;amp; Best Practices&lt;/strong&gt;&lt;/h1&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;why-im-interested-in-this&#34;&gt;&lt;strong&gt;Why I’m Interested in This&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;I love automation. There’s something deeply satisfying about writing code that handles small, everyday tasks—whether it’s controlling my smart home, transcribing voice notes into text, or running quick Python scripts to fetch information. However, I don’t always want to be tied to my desk, opening terminals and running commands just to turn on a light or set a reminder. Ideally, I’d like to control these automations right from my couch—maybe via my phone, a voice assistant, or a simple web app. I also want to make these conveniences accessible to my family, who shouldn’t need to know how to code or use SSH.&lt;/p&gt;
-&lt;p&gt;That’s where API servers shine. Instead of running scripts manually, I can build an API that allows me (and others) to trigger tasks from just about anywhere. Whether it’s turning on the lights, checking my home storage for a movie, or scheduling a reminder, having a central API greatly simplifies everything. It starts small—maybe just a local server at home—but can easily grow with VPN access or even move to the cloud. In this series, I’ll show you how I’m designing and building this type of API step by step, so you can see how straightforward and powerful it can be to integrate automation into your daily life.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-introduction-why-api-design-matters&#34;&gt;&lt;strong&gt;🚀 Introduction: Why API Design Matters&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;APIs are the &lt;strong&gt;backbone of modern applications&lt;/strong&gt;, enabling communication between different systems, devices, and services. Whether it’s for a &lt;strong&gt;smart home&lt;/strong&gt;, &lt;strong&gt;web application&lt;/strong&gt;, or &lt;strong&gt;mobile app&lt;/strong&gt;, a well-designed API ensures:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Consistency&lt;/strong&gt; – Clear, predictable behavior for developers and users.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Scalability&lt;/strong&gt; – Adapt and expand without breaking existing functionality.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Security&lt;/strong&gt; – Protect against unauthorized access and malicious attacks.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Maintainability&lt;/strong&gt; – Simplify debugging and long-term support.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-what-this-post-covers&#34;&gt;&lt;strong&gt;🔹 What This Post Covers&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;This post provides:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Key principles of API design&lt;/strong&gt; – Focusing on REST best practices.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Using OpenAPI for your API definition&lt;/strong&gt; – How to write and manage &lt;code&gt;openapi.yaml&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Generating API endpoints&lt;/strong&gt; – Turning a schema into working code.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;It’s &lt;strong&gt;part of a series&lt;/strong&gt; where we’ll build an API &lt;strong&gt;step by step&lt;/strong&gt;, from design to implementation.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-key-principles-of-api-design&#34;&gt;&lt;strong&gt;🔹 Key Principles of API Design&lt;/strong&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;1-clarity--consistency&#34;&gt;&lt;strong&gt;1️⃣ Clarity &amp;amp; Consistency&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;A good API should be:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Intuitive&lt;/strong&gt; – Easy to understand and use.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Predictable&lt;/strong&gt; – Clear request/response patterns.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Standardized&lt;/strong&gt; – Follows commonly accepted REST conventions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Example of a Well-Designed RESTful API:&lt;/strong&gt;&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;Action&lt;/th&gt;
-          &lt;th&gt;Endpoint&lt;/th&gt;
-          &lt;th&gt;Method&lt;/th&gt;
-          &lt;th&gt;Description&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Get all devices&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;/devices&lt;/code&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;GET&lt;/code&gt;&lt;/td&gt;
-          &lt;td&gt;Returns a list of available devices.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Get device status&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;/devices/{id}/status&lt;/code&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;GET&lt;/code&gt;&lt;/td&gt;
-          &lt;td&gt;Retrieves the current status of a device.&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Turn device on/off&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;/devices/{id}/control&lt;/code&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;POST&lt;/code&gt;&lt;/td&gt;
-          &lt;td&gt;Sends a command to turn a device ON or OFF.&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;2-why-rest&#34;&gt;&lt;strong&gt;2️⃣ Why REST?&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;For this project, I’m focusing on &lt;strong&gt;RESTful APIs&lt;/strong&gt; because they:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Are straightforward to document and share using OpenAPI.&lt;/li&gt;
-&lt;li&gt;Provide a clear structure for typical device control tasks.&lt;/li&gt;
-&lt;li&gt;Scale well from small, local projects to large, distributed systems.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;3-using-openapi-to-define-the-api-structure&#34;&gt;&lt;strong&gt;3️⃣ Using OpenAPI to Define the API Structure&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;To ensure the API is &lt;strong&gt;well-documented&lt;/strong&gt; and &lt;strong&gt;easy to generate&lt;/strong&gt;, I’ll define it using &lt;strong&gt;OpenAPI 3.0&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Why OpenAPI?&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Automated documentation&lt;/strong&gt; – Tools can generate a &lt;code&gt;/docs&lt;/code&gt; endpoint to explore and test.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Consistency&lt;/strong&gt; – Forces you to think through endpoints, parameters, and responses.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Code generation&lt;/strong&gt; – Creates boilerplate for various languages, saving development time.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-next-steps&#34;&gt;&lt;strong&gt;🔹 Next Steps&lt;/strong&gt;&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Define our API with OpenAPI (&lt;code&gt;openapi.yaml&lt;/code&gt;).&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Generate the corresponding API endpoints.&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Implement and test each endpoint.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Have questions or feedback? Let me know in the comments! 🚀&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;-downloads--resources&#34;&gt;&lt;strong&gt;📂 Downloads &amp;amp; Resources&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Stay tuned for the next post, where I’ll share the &lt;strong&gt;OpenAPI Schema (&lt;code&gt;openapi.yaml&lt;/code&gt;)&lt;/strong&gt; and walk through how to use it to generate your API.&lt;/p&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>API Design | Ehsan SadrFaridpour - Machine Learning and AI Research</title><link>https://ehsan.faridpour.com/tags/api-design/</link><atom:link href="https://ehsan.faridpour.com/tags/api-design/index.xml" rel="self" type="application/rss+xml"/><description>API Design</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><image><url>https://ehsan.faridpour.com/media/icon_hu7729264130191091259.png</url><title>API Design</title><link>https://ehsan.faridpour.com/tags/api-design/</link></image><item><title>API Server High Level</title><link>https://ehsan.faridpour.com/post/api-server/intro_to_api_s01_e01/</link><pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate><guid>https://ehsan.faridpour.com/post/api-server/intro_to_api_s01_e01/</guid><description>&lt;h1 id="designing-a-well-structured-api-concepts--best-practices">&lt;strong>Designing a Well-Structured API: Concepts &amp;amp; Best Practices&lt;/strong>&lt;/h1>
+&lt;hr>
+&lt;h2 id="why-im-interested-in-this">&lt;strong>Why I’m Interested in This&lt;/strong>&lt;/h2>
+&lt;p>I love automation. There’s something deeply satisfying about writing code that handles small, everyday tasks—whether it’s controlling my smart home, transcribing voice notes into text, or running quick Python scripts to fetch information. However, I don’t always want to be tied to my desk, opening terminals and running commands just to turn on a light or set a reminder. Ideally, I’d like to control these automations right from my couch—maybe via my phone, a voice assistant, or a simple web app. I also want to make these conveniences accessible to my family, who shouldn’t need to know how to code or use SSH.&lt;/p>
+&lt;p>That’s where API servers shine. Instead of running scripts manually, I can build an API that allows me (and others) to trigger tasks from just about anywhere. Whether it’s turning on the lights, checking my home storage for a movie, or scheduling a reminder, having a central API greatly simplifies everything. It starts small—maybe just a local server at home—but can easily grow with VPN access or even move to the cloud. In this series, I’ll show you how I’m designing and building this type of API step by step, so you can see how straightforward and powerful it can be to integrate automation into your daily life.&lt;/p>
+&lt;hr>
+&lt;h2 id="-introduction-why-api-design-matters">&lt;strong>🚀 Introduction: Why API Design Matters&lt;/strong>&lt;/h2>
+&lt;p>APIs are the &lt;strong>backbone of modern applications&lt;/strong>, enabling communication between different systems, devices, and services. Whether it’s for a &lt;strong>smart home&lt;/strong>, &lt;strong>web application&lt;/strong>, or &lt;strong>mobile app&lt;/strong>, a well-designed API ensures:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Consistency&lt;/strong> – Clear, predictable behavior for developers and users.&lt;/li>
+&lt;li>&lt;strong>Scalability&lt;/strong> – Adapt and expand without breaking existing functionality.&lt;/li>
+&lt;li>&lt;strong>Security&lt;/strong> – Protect against unauthorized access and malicious attacks.&lt;/li>
+&lt;li>&lt;strong>Maintainability&lt;/strong> – Simplify debugging and long-term support.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="-what-this-post-covers">&lt;strong>🔹 What This Post Covers&lt;/strong>&lt;/h2>
+&lt;p>This post provides:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Key principles of API design&lt;/strong> – Focusing on REST best practices.&lt;/li>
+&lt;li>&lt;strong>Using OpenAPI for your API definition&lt;/strong> – How to write and manage &lt;code>openapi.yaml&lt;/code>.&lt;/li>
+&lt;li>&lt;strong>Generating API endpoints&lt;/strong> – Turning a schema into working code.&lt;/li>
+&lt;/ul>
+&lt;p>It’s &lt;strong>part of a series&lt;/strong> where we’ll build an API &lt;strong>step by step&lt;/strong>, from design to implementation.&lt;/p>
+&lt;hr>
+&lt;h2 id="-key-principles-of-api-design">&lt;strong>🔹 Key Principles of API Design&lt;/strong>&lt;/h2>
+&lt;h3 id="1-clarity--consistency">&lt;strong>1️⃣ Clarity &amp;amp; Consistency&lt;/strong>&lt;/h3>
+&lt;p>A good API should be:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Intuitive&lt;/strong> – Easy to understand and use.&lt;/li>
+&lt;li>&lt;strong>Predictable&lt;/strong> – Clear request/response patterns.&lt;/li>
+&lt;li>&lt;strong>Standardized&lt;/strong> – Follows commonly accepted REST conventions.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Example of a Well-Designed RESTful API:&lt;/strong>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align: left">Action&lt;/th>
+&lt;th style="text-align: left">Endpoint&lt;/th>
+&lt;th style="text-align: left">Method&lt;/th>
+&lt;th style="text-align: left">Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align: left">Get all devices&lt;/td>
+&lt;td style="text-align: left">&lt;code>/devices&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>GET&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Returns a list of available devices.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Get device status&lt;/td>
+&lt;td style="text-align: left">&lt;code>/devices/{id}/status&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>GET&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Retrieves the current status of a device.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align: left">Turn device on/off&lt;/td>
+&lt;td style="text-align: left">&lt;code>/devices/{id}/control&lt;/code>&lt;/td>
+&lt;td style="text-align: left">&lt;code>POST&lt;/code>&lt;/td>
+&lt;td style="text-align: left">Sends a command to turn a device ON or OFF.&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;hr>
+&lt;h3 id="2-why-rest">&lt;strong>2️⃣ Why REST?&lt;/strong>&lt;/h3>
+&lt;p>For this project, I’m focusing on &lt;strong>RESTful APIs&lt;/strong> because they:&lt;/p>
+&lt;ul>
+&lt;li>Are straightforward to document and share using OpenAPI.&lt;/li>
+&lt;li>Provide a clear structure for typical device control tasks.&lt;/li>
+&lt;li>Scale well from small, local projects to large, distributed systems.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="3-using-openapi-to-define-the-api-structure">&lt;strong>3️⃣ Using OpenAPI to Define the API Structure&lt;/strong>&lt;/h3>
+&lt;p>To ensure the API is &lt;strong>well-documented&lt;/strong> and &lt;strong>easy to generate&lt;/strong>, I’ll define it using &lt;strong>OpenAPI 3.0&lt;/strong>.&lt;/p>
+&lt;p>&lt;strong>Why OpenAPI?&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Automated documentation&lt;/strong> – Tools can generate a &lt;code>/docs&lt;/code> endpoint to explore and test.&lt;/li>
+&lt;li>&lt;strong>Consistency&lt;/strong> – Forces you to think through endpoints, parameters, and responses.&lt;/li>
+&lt;li>&lt;strong>Code generation&lt;/strong> – Creates boilerplate for various languages, saving development time.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="-next-steps">&lt;strong>🔹 Next Steps&lt;/strong>&lt;/h2>
+&lt;ol>
+&lt;li>&lt;strong>Define our API with OpenAPI (&lt;code>openapi.yaml&lt;/code>).&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Generate the corresponding API endpoints.&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Implement and test each endpoint.&lt;/strong>&lt;/li>
+&lt;/ol>
+&lt;p>Have questions or feedback? Let me know in the comments! 🚀&lt;/p>
+&lt;hr>
+&lt;h3 id="-downloads--resources">&lt;strong>📂 Downloads &amp;amp; Resources&lt;/strong>&lt;/h3>
+&lt;p>Stay tuned for the next post, where I’ll share the &lt;strong>OpenAPI Schema (&lt;code>openapi.yaml&lt;/code>)&lt;/strong> and walk through how to use it to generate your API.&lt;/p></description></item></channel></rss>
