@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OpenAPI | Ehsan SadrFaridpour - Machine Learning and AI Research</title><link>https://ehsan.faridpour.com/tags/openapi/</link><atom:link href="https://ehsan.faridpour.com/tags/openapi/index.xml" rel="self" type="application/rss+xml"/><description>OpenAPI</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><image><url>https://ehsan.faridpour.com/media/icon_hu7729264130191091259.png</url><title>OpenAPI</title><link>https://ehsan.faridpour.com/tags/openapi/</link></image><item><title>API Server High Level</title><link>https://ehsan.faridpour.com/post/api-server/intro_to_api_s01_e01/</link><pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate><guid>https://ehsan.faridpour.com/post/api-server/intro_to_api_s01_e01/</guid><description>&lt;h1 id="designing-a-well-structured-api-concepts--best-practices">&lt;strong>Designing a Well-Structured API: Concepts &amp;amp; Best Practices&lt;/strong>&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OpenAPI | Ehsan SadrFaridpour - Machine Learning and AI Research</title><link>https://ehsan.faridpour.com/tags/openapi/</link><atom:link href="https://ehsan.faridpour.com/tags/openapi/index.xml" rel="self" type="application/rss+xml"/><description>OpenAPI</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><image><url>https://ehsan.faridpour.com/media/icon_hu_c95efeb576b66663.png</url><title>OpenAPI</title><link>https://ehsan.faridpour.com/tags/openapi/</link></image><item><title>API Server High Level</title><link>https://ehsan.faridpour.com/post/api-server/intro_to_api_s01_e01/</link><pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate><guid>https://ehsan.faridpour.com/post/api-server/intro_to_api_s01_e01/</guid><description>&lt;h1 id="designing-a-well-structured-api-concepts--best-practices">&lt;strong>Designing a Well-Structured API: Concepts &amp;amp; Best Practices&lt;/strong>&lt;/h1>
 &lt;hr>
 &lt;h2 id="why-im-interested-in-this">&lt;strong>Why I’m Interested in This&lt;/strong>&lt;/h2>
 &lt;p>I love automation. There’s something deeply satisfying about writing code that handles small, everyday tasks—whether it’s controlling my smart home, transcribing voice notes into text, or running quick Python scripts to fetch information. However, I don’t always want to be tied to my desk, opening terminals and running commands just to turn on a light or set a reminder. Ideally, I’d like to control these automations right from my couch—maybe via my phone, a voice assistant, or a simple web app. I also want to make these conveniences accessible to my family, who shouldn’t need to know how to code or use SSH.&lt;/p>
@@ -34,30 +34,30 @@
 &lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align: left">Action&lt;/th>
-&lt;th style="text-align: left">Endpoint&lt;/th>
-&lt;th style="text-align: left">Method&lt;/th>
-&lt;th style="text-align: left">Description&lt;/th>
+&lt;th>Action&lt;/th>
+&lt;th>Endpoint&lt;/th>
+&lt;th>Method&lt;/th>
+&lt;th>Description&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align: left">Get all devices&lt;/td>
-&lt;td style="text-align: left">&lt;code>/devices&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>GET&lt;/code>&lt;/td>
-&lt;td style="text-align: left">Returns a list of available devices.&lt;/td>
+&lt;td>Get all devices&lt;/td>
+&lt;td>&lt;code>/devices&lt;/code>&lt;/td>
+&lt;td>&lt;code>GET&lt;/code>&lt;/td>
+&lt;td>Returns a list of available devices.&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Get device status&lt;/td>
-&lt;td style="text-align: left">&lt;code>/devices/{id}/status&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>GET&lt;/code>&lt;/td>
-&lt;td style="text-align: left">Retrieves the current status of a device.&lt;/td>
+&lt;td>Get device status&lt;/td>
+&lt;td>&lt;code>/devices/{id}/status&lt;/code>&lt;/td>
+&lt;td>&lt;code>GET&lt;/code>&lt;/td>
+&lt;td>Retrieves the current status of a device.&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align: left">Turn device on/off&lt;/td>
-&lt;td style="text-align: left">&lt;code>/devices/{id}/control&lt;/code>&lt;/td>
-&lt;td style="text-align: left">&lt;code>POST&lt;/code>&lt;/td>
-&lt;td style="text-align: left">Sends a command to turn a device ON or OFF.&lt;/td>
+&lt;td>Turn device on/off&lt;/td>
+&lt;td>&lt;code>/devices/{id}/control&lt;/code>&lt;/td>
+&lt;td>&lt;code>POST&lt;/code>&lt;/td>
+&lt;td>Sends a command to turn a device ON or OFF.&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
